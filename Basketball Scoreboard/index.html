@@ -1,29 +1,76 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="home-board">
-                <h3>HOME</h3>
-                <div id="score-board"></div>
-                <button onclick="incrementHome(1)" id="incrementOne" class="increment-btn">+1</button>
-                <button onclick="incrementHome(2)" id="incrementTwo" class="increment-btn">+2</button>
-                <button onclick="incrementHome(3)" id="incrementThree" class="increment-btn">+3</button>
-                <button onclick="resetButtonHome()" id="reset" class="reset-btn">Reset</button>
-            </div>
-            <div class="guest-board">
-                <h3>GUEST</h3>
-                <div id="score-board"></div>
-                <button onclick="incrementGuest(1)" id="incrementOne" class="increment-btn">+1</button>
-                <button onclick="incrementGuest(2)" id="incrementTwo" class="increment-btn">+2</button>
-                <button onclick="incrementGuest(3)" id="incrementThree" class="increment-btn">+3</button>
-                <button onclick="resetButtonGuest()" id="reset" class="reset-btn">Reset</button>               
-            </div>         
-        </div>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="home-board">
+        <h3>HOME</h3>
+        <div id="score-board"></div>
+        <button
+          onclick="incrementHome(1)"
+          id="incrementOne"
+          class="increment-btn"
+        >
+          +1
+        </button>
+        <button
+          onclick="incrementHome(2)"
+          id="incrementTwo"
+          class="increment-btn"
+        >
+          +2
+        </button>
+        <button
+          onclick="incrementHome(3)"
+          id="incrementThree"
+          class="increment-btn"
+        >
+          +3
+        </button>
+        <button onclick="resetButtonHome()" id="reset" class="reset-btn">
+          Reset
+        </button>
+      </div>
+      <div class="away-board">
+        <h3>AWAY</h3>
+        <div id="score-board"></div>
+        <button
+          onclick="incrementAway(1)"
+          id="incrementOne"
+          class="increment-btn"
+        >
+          +1
+        </button>
+        <button
+          onclick="incrementAway(2)"
+          id="incrementTwo"
+          class="increment-btn"
+        >
+          +2
+        </button>
+        <button
+          onclick="incrementAway(3)"
+          id="incrementThree"
+          class="increment-btn"
+        >
+          +3
+        </button>
+        <button onclick="resetButtonAway()" id="reset" class="reset-btn">
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
